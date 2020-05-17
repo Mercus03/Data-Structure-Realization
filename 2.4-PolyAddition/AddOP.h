@@ -1,5 +1,5 @@
-#ifndef OP_H
-#define OP_H
+#ifndef ADDOP_H
+#define ADDOP_H
 #include "PolyNode.h"
 
 int Compare(int i1, int i2){
@@ -41,7 +41,7 @@ Polynomial PolyAdd(Polynomial P1,Polynomial P2){
             break;
         case -1:
             Attach(P2->coef, P2->expon, &rear);
-            P1 = P1->Next;
+            P2 = P2->Next;
             break;
         case 0:
             sumCoef = P1->coef + P2->coef;
