@@ -8,9 +8,6 @@ struct PolyNode{
     struct PolyNode *Next;  //指向下一个节点的指针
 };
 typedef struct PolyNode *Polynomial;
-Polynomial P1,P2;
-
-
-
+Polynomial P1, P2;
 
 #endif

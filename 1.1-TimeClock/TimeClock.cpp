@@ -9,7 +9,7 @@ double duration;
 clock_t start, stop;
 #define MAXN 10     /* 多项式最大项数，即多项式阶数+1 */
 #define MAXK 1e7    /* 循环次数 */
-typedef double(*PFUN)(int n, double a[], double x); /* 函数指针 */
+typedef double (*PFUN)(int n, double a[], double x); /* typedef自定义同义类型，函数指针 */
 
 double CountDuration(PFUN pfun, double a[]){    /* 函数指针作为函数的参数 */
     start = clock();
