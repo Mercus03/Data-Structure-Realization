@@ -60,7 +60,10 @@ Polynomial Mult2(Polynomial P1, Polynomial P2){
 
 /* 方法一：将P1当前项(c1,e1)乘P2多项式，再加到结果多项式里 */
 Polynomial Mult1(Polynomial P1, Polynomial P2){
-    Polynomial P, Rear, Psum, temp, t1, t2;
+    Polynomial Psum, Rear, temp, t1, t2, P; // Psum,temp,t1初始化有问题
+    Psum = (Polynomial)malloc(sizeof(struct PolyNode));
+    Psum = NULL; //不懂，这边不赋空就会有初始值...
+
     t1 = P1; t2 = P2;
     while(t1){
         t2 = P2;
