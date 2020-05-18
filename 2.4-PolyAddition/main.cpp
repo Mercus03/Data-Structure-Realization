@@ -3,6 +3,16 @@
 #include "AddOP.h"
 #include "MultOP.h"
 
+/*
+设计函数分别求两个一元多项式的乘积与和
+### 输入样例：
+4 3 4 -5 2 6 1 -2 0
+3 5 20 -7 4 3 1
+### 输出样例：
+15 24 -25 22 30 21 -10 20 -21 8 35 6 -33 5 14 4 -15 3 18 2 -6 1
+5 20 -4 4 -5 2 9 1 -2 0
+*/
+
 using namespace std;
 Polynomial ReadPoly();
 void PrintPoly(Polynomial P);
